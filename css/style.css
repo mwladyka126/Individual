@@ -342,14 +342,14 @@ template {
 }
 
 /* Components */
-.sidebar_list-menu_img {
+.icon-img {
   height: 15px;
   width: 15px;
   margin-right: 15px;
 }
 
 .sidebar {
-  background-color: white;
+  background-color: wheat;
 }
 
 /* Sections */
