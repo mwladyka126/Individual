@@ -1,9 +1,14 @@
+.sidebar{
+    background-color:$background-sidebar;
+    min-width: max-content;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
 .icon-img{
-    //border: 1px solid red;
     height: 15px;
     width: 15px;
     margin-right: 15px;
 }
-.sidebar{
-    background-color:wheat;
-}
+
