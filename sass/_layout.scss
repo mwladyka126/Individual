@@ -11,9 +11,10 @@ body {
   }
 
 .container{
+  height: 100%;
   display: grid;
   grid-template-columns: 190px 11fr;
-  grid-template-rows: 50px 1fr 1fr;
+  grid-template-rows: 50px 1fr;
   grid-column-gap: 0.2%;
   grid-template-areas:
   "sidebar navbar"
@@ -25,7 +26,6 @@ body {
 }    
 
 .navbar{
-  margin: 0;
   grid-area: navbar;
 }
 
@@ -35,5 +35,4 @@ body {
   flex-direction: column;
   overflow-y: auto;
   position: relative;
-  //overflow-y: scroll;
 }

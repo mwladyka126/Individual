@@ -4,9 +4,40 @@
     right: 0;
     height: 60px;
     width: calc(100% - 195px);
-    border: 1px solid #e3e3e3;
-    background-color: red;
+    border: 1px solid  $grey-font;
+    background-color:$background-navbar;
     display: flex;
     flex-direction:row;
     justify-content: flex-end;
+    color: $grey-hover;
+    z-index:100;
+}
+.navbar_element a{
+    display: flex;
+    width: 184px;
+    height: 60px;
+    align-items: center;
+    flex-direction: row;
+    justify-content:space-between;
+    border-left: 1px solid $grey-font;
+    padding: 20px;
+    color: $grey-hover;
+}
+
+.navbar_button a{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    border-left: 1px solid  $grey-font;
+    color: $grey-hover;
+}
+
+.quit{
+    filter:invert(0.5)!important;
+}
+.notification{
+    filter:invert(0.5)!important;
 }
