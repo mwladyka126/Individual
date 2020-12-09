@@ -4,10 +4,38 @@
     //min-width: max-content;
     height: 100%;
     margin:0;
+    position: fixed;
+}
+
+.sidebar-title{
+    padding: 0 15px;
+}
+
+.sidebar_list{
+    border-bottom: 1px solid $grey-font;
 }
 
 ul{
     list-style-type:none;
+    padding: 20px;
+    align-items: center;
+}
+
+li{
+    border-left: 4px solid $background-sidebar;
+    display: flex;
+    width: 184px;
+    height: 42px;
+    align-items: center;
+}
+
+li:hover{
+        background-color:$grey-hover;
+        border-left: 4px solid $orange;
+}
+a{
+    text-decoration: none;
+    color:$grey-font;
 }
 .icon-img{
     height: 15px;
@@ -16,3 +44,7 @@ ul{
     filter: invert(94%) sepia(0%) saturate(130%) hue-rotate(190deg) brightness(102%) contrast(85%);
 }
 
+.sidebar_manager a {
+    padding: 20px;
+    align-items: center;
+}
