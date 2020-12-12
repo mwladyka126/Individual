@@ -10,29 +10,37 @@ body {
     box-sizing: border-box;
   }
 
-.container{
-  height: 100%;
-  display: grid;
-  grid-template-columns: 190px 11fr;
-  grid-template-rows: 50px 1fr;
-  grid-column-gap: 0.2%;
-  grid-template-areas:
-  "sidebar navbar"
-  "sidebar main-content";
-}
-
-.sidebar{
-  grid-area: sidebar;
-}    
-
-.navbar{
-  grid-area: navbar;
-}
-
-.main-content{
-  grid-area: main-content;
+.wrapper{
   display: flex;
-  flex-direction: column;
-  overflow-y: auto;
-  position: relative;
+  height: 100vh;   
+  overflow: hidden;  
+  margin: 0px;  
+}
+.column{
+  height: 100vh; 
+  display: flex;
+  flex-direction: column; 
+}
+
+#left {
+  flex:20%;
+  //flex-shrink: 0;  /*makes sure that content is not cut off in a smaller browser window*/
+}
+#right{
+  //display: grid;
+  flex: 80%;
+}
+
+.container {//main-content
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
 }

@@ -1,19 +1,40 @@
 .sidebar{
     background-color:$background-sidebar;
     color:$grey-font;
-    //min-width: max-content;
-    height: 100%;
+    width: 188px;
+    height: 100vh;
     margin:0;
     position: fixed;
-    z-index:100;
+    z-index:1000;
+    display:flex;
+    flex-direction: column;
+    transition: $transition;
 }
+.sidebar_top{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    padding-top: 5px;
 
-.sidebar-title{
-    padding: 0 15px;
+    .sidebar_title{
+        h1{
+        font-family: 'Satisfy';
+        padding:5px;
+        }
+    }
+    .menu-button{
+        display: flex;
+        width: 60px;
+        height: 60px;
+        align-items: center;
+        position: relative;
+        padding: 20px;        
+    }
 }
 
 .sidebar_list{
     border-bottom: 1px solid $grey-font;
+    display: contents;
 }
 
 ul{
@@ -25,7 +46,7 @@ ul{
 li{
     border-left: 4px solid $background-sidebar;
     display: flex;
-    width: 184px;
+    width: 166px;
     height: 42px;
     align-items: center;
 }
@@ -48,4 +69,11 @@ a{
 .sidebar_manager a {
     padding: 20px;
     align-items: center;
+    img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+        position: relative;
+    }
 }
