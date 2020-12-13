@@ -23,6 +23,9 @@
     border-left: 1px solid $grey-font;
     padding: 20px;
     color: $grey-hover;
+    .profile-name{
+        color:$blue;
+    }
 }
 
 .navbar_button a{
@@ -30,15 +33,27 @@
     width: 60px;
     height: 60px;
     align-items: center;
+    justify-content:center;
     position: relative;
     padding: 20px;
     border-left: 1px solid  $grey-font;
     color: $grey-hover;
+    .dot {
+        height: 7px;
+        width: 7px;
+        background-color:$orange;
+        border-radius: 50%;
+        position:absolute;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        z-index:2;
+    }
 }
 
-.quit{
-    filter:invert(0.5)!important;
+.icon-navbar{
+    filter:$filter-navbar;
 }
-.notification{
-    filter:invert(0.5)!important;
+.navbar_wallet_amount span{
+    font-weight: bold;
+    opacity: 0.5;
 }

@@ -1,5 +1,6 @@
 .main-content {
-      margin-top: 90px;      
+      margin-top: 90px;   
+         
 }
 .container-fluid{
     justify-content: center;
@@ -11,16 +12,18 @@
     color: $paragraph-color;
     flex-grow: 1;
     overflow-y: auto;
+    
    }
 .main-content_title{
     border: 1px solid $grey-font;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
     height: 46px;
+    background-color:$background-navbar;
 
    h2{
-        font-size: $paragraph-font-size;
         padding-left: 5px;
+        font-size: $paragraph-font-size;
     }    
 }
 .main-content_date{
@@ -31,8 +34,10 @@
     align-items: center;
     border: 1px solid $grey-font;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color:$background-navbar;
     input{
         margin: 3px;
+        opacity:0.5;
     }  
     .button{
         min-width: 40px;
@@ -45,6 +50,10 @@
         padding-left: 10px;
         margin-left: 10px;
         cursor: pointer;
+        .icon{
+            margin-right: 16px;
+            opacity:0.5;
+        }
             
         &:hover {
           background-color: #ffa200;
@@ -53,10 +62,48 @@
 }
 .main-content_statistics{
     width: 100%;
-    height: 640px;
+    //height: 640px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 1px solid $grey-font;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color:$background-navbar;
 }
+.scroll-wrapper {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  .scroll-wrapper .table {
+    width: 100%;
+    max-width: 100%;
+    margin: 15px;
+  }
+  .table-row{
+    margin: 0 auto;
+    display:flex;
+    justify-content: center;
+    .cell{
+    display:inline-flex;
+    justify-content: space-between;
+    width: 250px;
+    border-bottom: 2px solid #e3e3e3;
+    margin: 15px;
+    .name{
+        font-weight: bold;
+    }
+    }
+  }
+  .earnings p{
+    font-weight: bold;
+    font-size: $paragraph-font-size;
+  }
+    .earnings-indicators{
+        display: flex;
+        .dot-wrapper{
+            
+        }
+    }

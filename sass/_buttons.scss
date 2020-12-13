@@ -1,4 +1,4 @@
-.button-dates{//kwadrat,orange
+.button-square{//kwadrat,orange
     min-width: 40px;
     height: 40px;
     background-color: $orange;
@@ -13,4 +13,21 @@
     &:hover {
       background-color: #ffa200;
     }
+}
+.button-rectangle{
+  width: 60px;
+  height: 40px;
+  background-color: $orange;
+  border-radius: 5px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.icon {
+  height: 16px;
+  width: 16px;  
 }

@@ -21,44 +21,52 @@
                         <h1>Just do it</h1>
                     </div>
                     <div class="menu-button">
-                        <i class="fas fa-bars"></i>
+                        <i class="fas fa-bars hamburger"></i>
                     </div>
                 </div>
                 <div class="sidebar_list">
                     <ul class="sidebar_list-menu">
                         <li>
-                            <a href="#"><img class="icon-img" src="images/icons/general.svg"
+                            <a href="#"><img class="icon icon-sidebar" src="images/icons/general.svg"
                                     alt="general-icon">General</a>
                         </li>
                         <li>
-                            <a href="#"><img class="icon-img" src="images/icons/details.svg"
+                            <a href="#"><img class="icon icon-sidebar" src="images/icons/details.svg"
                                     alt="details-icon">Details</a>
                         </li>
                         <li>
-                            <a href="#"><img class="icon-img" src="images/icons/links.svg" alt="links-icon">Links</a>
+                            <a href="#"><img class="icon icon-sidebar" src="images/icons/links.svg"
+                                    alt="links-icon">Links</a>
                         </li>
                         <li>
-                            <a href="#"><img class="icon-img" src="images/icons/banners.svg"
+                            <a href="#"><img class="icon icon-sidebar" src="images/icons/banners.svg"
                                     alt="banners-icon">Banners</a>
                         </li>
                         <li>
-                            <a href="#"><img class="icon-img" src="images/icons/personaldata.svg"
+                            <a href="#"><img class="icon icon-sidebar" src="images/icons/personaldata.svg"
                                     alt="banners-icon">Personal data</a>
                         </li>
                         <li>
-                            <a href="#"><img class="icon-img" src="images/icons/payout.svg"
+                            <a href="#"><img class="icon icon-sidebar" src="images/icons/payout.svg"
                                     alt="banners-icon">Payout</a>
                         </li>
                         <li>
-                            <a href="#"><img class="icon-img" src="images/icons/postback.svg"
+                            <a href="#"><img class="icon icon-sidebar" src="images/icons/postback.svg"
                                     alt="banners-icon">Postback</a>
                         </li>
                     </ul>
                 </div>
                 <div class="sidebar_manager">
-                    <h4 class="sidebar_manager_title">YOUR MANAGER</h4>
-                    <a href="#" class="profile-name"><img class="icon-img" class="sidebar_manager_img"
-                            src="images/icons/profile.svg" alt="manager">Andy J.</a>
+                    <div class="manager-title">
+                        <h4>YOUR MANAGER</h4>
+                    </div>
+                    <div class="manager-profile">
+                        <span class="dot"></span>
+                        <img class="icon-sidebar"
+                            src="https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="manager">
+                        <a href="#" class="profile-name">Andy J.</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -67,25 +75,27 @@
             <div class="navbar">
                 <div class="navbar_element">
                     <a href="#">
-                        <img class="icon-img wallet " src="images/icons/wallet.svg" alt="wallet-icon">
+                        <img class="icon icon-navbar wallet " src="images/icons/wallet.svg" alt="wallet-icon">
                         <div class="navbar_wallet_amount"><span>$1,500.00</span></div>
-                        <img class="icon-img" src="images/icons/arrow-down.svg" alt="arrow-down-icon">
+                        <img class="icon icon-navbar " src="images/icons/arrow-down.svg" alt="arrow-down-icon">
                     </a>
                 </div>
                 <div class="navbar_button">
                     <a href="#">
-                        <img class="icon-img notification" src="images/icons/notification.svg" alt="notification-icon">
+                        <span class="dot"></span>
+                        <img class="icon icon-navbar  notification" src="images/icons/notification.svg"
+                            alt="notification-icon">
                     </a>
                 </div>
                 <div class="navbar_element">
                     <a href="#">
-                        <img class="icon-img" src="images/icons/profile.svg" alt="profile-icon">
-                        <div class="profile-name"><span>Leonardo Dicaprio</span></div>
+                        <img class="icon icon-navbar" src="images/icons/profile.svg" alt="profile-icon">
+                        <div class="profile-name">Leon Caprio</div>
                     </a>
                 </div>
                 <div class="navbar_button">
                     <a href="#">
-                        <img class="icon-img quit" src="images/icons/quit.svg" alt="quit-icon">
+                        <img class="icon icon-navbar  quit" src="images/icons/quit.svg" alt="quit-icon">
                     </a>
                 </div>
             </div>
@@ -97,58 +107,62 @@
                     <div class="main-content_date">
                         <input type="date" value="2017-06-01">
                         <input type="date" value="2017-06-01">
-                        <a href="#" class="button button-dates"><img class="icon-img" src="images/icons/refresh.svg"
+                        <a href="#" class="button button-square"><img class="icon" src="images/icons/refresh.svg"
                                 alt="refresh" title="refresh"></a>
                     </div>
                     <div class="main-content_statistics">
-                        <div class="main-content-statistics-table">
-                            <tr>
-                                <td>Visit Signupus</td>
-                                <td>124</td>
-                            </tr>
-                            <tr>
-                                <td>Net deposit</td>
-                                <td>564</td>
-                            </tr>
-                            <tr>
-                                <td>FTD</td>
-                                <td>445</td>
-                            </tr>
-                            <tr>
-                                <td>Turn over</td>
-                                <td>432</td>
-                            </tr>
-                        </div>
-                        <div class="main-content-statistics-earnings">
-                            <div class="earnings">
-                                <p>Earnings chart</p>
+                        <div class="table scroll-wrapper">
+                            <div class="table">
+                                <div class="table-row">
+                                    <div class="cell">
+                                        <div class="name">Visit Signupus</div>
+                                        <div>124</div>
+                                    </div>
+                                    <div class="cell">
+                                        <div class="name">Net deposit</div>
+                                        <div>564</div>
+                                    </div>
+                                </div>
+                                <div class="table-row">
+                                    <div class="cell">
+                                        <div class="name">FTD</div>
+                                        <div>445</div>
+                                    </div>
+                                    <div class="cell">
+                                        <div class="name">Turn over</div>
+                                        <div>432</div>
+                                    </div>
+                                </div>
+                                </table>
                             </div>
-                            <div class="earnings-indicators">
-                                <div class="dot-wrapper">
-                                    <span class="dot blue"></span>
-                                    <a href="#">Sinupus</a>
+                            <div class="main-content-statistics-earnings">
+                                <div class="earnings">
+                                    <p>Earnings chart</p>
                                 </div>
-                                <div class="dot-wrapper">
-                                    <span class="dot orange"></span>
-                                    <a href="#">FTD</a>
+                                <div class="earnings-indicators">
+                                    <div class="dot-wrapper">
+                                        <span class="dot blue"></span>
+                                        <a href="#" class="button button-rectangle">Sinupus</a>
+                                    </div>
+                                    <div class="dot-wrapper">
+                                        <span class="dot orange"></span>
+                                        <a href="#" class="button button-rectangle">FTD</a>
+                                    </div>
+                                    <div class="dot-wrapper">
+                                        <span class="dot green"></span>
+                                        <a href="#" class="button button-rectangle">Earned</a>
+                                    </div>
                                 </div>
-                                <div class="dot-wrapper">
-                                    <span class="dot green"></span>
-                                    <a href="#">Earned</a>
-                                </div>
+                                <div class="graph"></div>
                             </div>
-                            <div class="graph"></div>
                         </div>
-                    </div>
                 </section>
 
             </div>
         </div>
     </div>
 
-
+    <script src="js/script.js"></script>
 </body>
-
-
 
 </html>

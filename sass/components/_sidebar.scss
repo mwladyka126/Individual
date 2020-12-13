@@ -33,12 +33,12 @@
 }
 
 .sidebar_list{
-    border-bottom: 1px solid $grey-font;
     display: contents;
 }
 
 ul{
     list-style-type:none;
+    border-bottom: 2px solid $grey-font;
     padding: 20px;
     align-items: center;
 }
@@ -58,22 +58,44 @@ li:hover{
 a{
     text-decoration: none;
     color:$grey-font;
-}
-.icon-img{
-    height: 16px;
-    width: 16px;
-    margin-right: 16px;
-    filter: invert(94%) sepia(0%) saturate(130%) hue-rotate(190deg) brightness(102%) contrast(85%);
+    .icon-sidebar{
+       filter:$filter-sidebar;
+       margin-right: 16px;       
+    }
 }
 
-.sidebar_manager a {
-    padding: 20px;
-    align-items: center;
-    img{
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        object-fit: cover;
-        position: relative;
+.sidebar_manager{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    .manager-title{
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+    }
+    .manager-profile{
+        display: inline-flex;
+        margin:0 auto;
+        a {
+            padding-top: 20px;
+            color: $blue;
+        }
+        img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            position: relative;
+            margin-right: 16px;
+        }
+        .dot {
+            height: 15px;
+            width: 15px;
+            background-color:$green;
+            border-radius: 50%;
+            position:absolute;
+            margin-left: 35px;
+            z-index:2;
+        }
     }
 }
