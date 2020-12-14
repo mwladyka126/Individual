@@ -344,7 +344,7 @@ template {
 body {
   width: 100vw;
   background-color: #f5f5f2;
-  overflow: auto;
+  overflow-y: scroll;
   overflow-x: hidden;
   margin: 0;
 }
@@ -357,7 +357,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   height: 100vh;
-  overflow: hidden;
   margin: 0px;
 }
 
@@ -438,7 +437,6 @@ body {
 .sidebar {
   background-color: #302e2e;
   color: #e3e3e3;
-  width: 188px;
   height: 100vh;
   margin: 0;
   position: fixed;
@@ -475,14 +473,16 @@ body {
   padding: 20px;
 }
 
-.sidebar_list {
-  display: contents;
+.show {
+  display: none;
+  width: 60px;
+  height: 60px;
 }
 
 ul {
   list-style-type: none;
   border-bottom: 2px solid #e3e3e3;
-  padding: 20px;
+  padding: 20px 0 20px 0;
   -ms-flex-align: center;
       align-items: center;
 }
@@ -491,7 +491,7 @@ li {
   border-left: 4px solid #302e2e;
   display: -ms-flexbox;
   display: flex;
-  width: 166px;
+  width: 100%;
   height: 42px;
   -ms-flex-align: center;
       align-items: center;
@@ -509,7 +509,7 @@ a {
 
 a .icon-sidebar {
   filter: invert(94%) sepia(0%) saturate(130%) hue-rotate(190deg) brightness(102%) contrast(85%);
-  margin-right: 16px;
+  margin: 0 16px 0 16px;
 }
 
 .sidebar_manager {
@@ -538,6 +538,10 @@ a .icon-sidebar {
 .sidebar_manager .manager-profile a {
   padding-top: 20px;
   color: #39d0eb;
+}
+
+.sidebar_manager .manager-profile a:hover {
+  color: #e3e3e3;
 }
 
 .sidebar_manager .manager-profile img {
@@ -653,7 +657,6 @@ a .icon-sidebar {
   color: #808080;
   -ms-flex-positive: 1;
       flex-grow: 1;
-  overflow-y: auto;
 }
 
 .main-content_title {
@@ -715,6 +718,7 @@ a .icon-sidebar {
 
 .main-content_statistics {
   width: 100%;
+  height: 100vh;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -762,6 +766,17 @@ a .icon-sidebar {
   font-weight: bold;
 }
 
+.earnings {
+  width: 100%;
+  height: 46px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
 .earnings p {
   font-weight: bold;
   font-size: 16px;
@@ -770,6 +785,18 @@ a .icon-sidebar {
 .earnings-indicators {
   display: -ms-flexbox;
   display: flex;
+}
+
+.graph {
+  position: relative;
+  width: 100%;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.graph #myChart {
+  width: 1000px;
+  height: 500px;
 }
 
 /* Sections */

@@ -1,7 +1,7 @@
 body {
     width: 100vw;
     background-color:$background-main-color;
-    overflow: auto;
+    overflow-y: scroll;
     overflow-x: hidden;
     margin: 0;
   }
@@ -13,7 +13,7 @@ body {
 .wrapper{
   display: flex;
   height: 100vh;   
-  overflow: hidden;  
+  //overflow: hidden;  
   margin: 0px;  
 }
 .column{
