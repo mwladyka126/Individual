@@ -42,4 +42,14 @@ var chart = new Chart(ctx, {
       hidden: true,
     }]
   },
+  options: {
+    responsive: true,
+    legend: {
+      display: false,
+    },
+    /*gridLines: {
+      display: false,
+      color: '#ff0000',
+    },*/
+  },
 });

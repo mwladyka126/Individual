@@ -106,12 +106,26 @@
     p{
     font-weight: bold;
     font-size: $paragraph-font-size;
+    padding:20px;
     }
   }
     .earnings-indicators{
         display: flex;
+        justify-content: center;
+        align-items: center;
         .dot-wrapper{
-            
+          position: relative;
+          margin:10px;
+          .dot {
+            height: 15px;
+            width: 15px;
+            background-color:$green;
+            border-radius: 50%;
+            position:absolute;
+            margin-left: 15px;
+            margin-top:15px;
+            z-index:20;
+          }
         }
     }
     .graph{
