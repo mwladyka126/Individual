@@ -1,6 +1,5 @@
 .main-content {
-      margin-top: 90px;   
-         
+      margin-top: 90px;          
 }
 .container-fluid{
     justify-content: center;
@@ -11,19 +10,16 @@
     position: relative;
     color: $paragraph-color;
     flex-grow: 1;
-    //overflow-y: auto;
-    
-   }
+}
 .main-content_title{
     border: 1px solid $grey-font;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
     height: 46px;
     background-color:$background-navbar;
-
    h2{
-        padding-left: 5px;
-        font-size: $paragraph-font-size;
+      padding-left: 5px;
+      font-size: $paragraph-font-size;
     }    
 }
 .main-content_date{
@@ -35,26 +31,17 @@
     border: 1px solid $grey-font;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color:$background-navbar;
-    input{
+  
+    input[type="date"]{
         margin: 3px;
         opacity:0.5;
+        padding: 5px 10px;
     }  
-    .button{
-        min-width: 40px;
-        height: 40px;
-        background-color: $orange;
-        border-radius: 5px;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        padding-left: 10px;
-        margin-left: 10px;
-        cursor: pointer;
+    .button-refresh{
         .icon{
-            margin-right: 16px;
-            opacity:0.5;
-        }
-            
+          margin-right: 16px;
+          opacity:0.5;
+        }            
         &:hover {
           background-color: #ffa200;
         }
@@ -71,71 +58,154 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color:$background-navbar;
 }
-.scroll-wrapper {
-    display: block;
-    width: 100%;
-    overflow-x: auto;
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin: 15px;
+}
+
+.table-row{
+  margin: 0 auto;
+  display:flex;
+  justify-content: center;
+  .cell{
+  display:inline-flex;
+  justify-content: space-between;
+  width: 250px;
+  border-bottom: 2px solid #e3e3e3;
+  margin: 15px;
   }
-  
-  .scroll-wrapper .table {
-    width: 100%;
-    max-width: 100%;
-    margin: 15px;
+}  
+.name{
+  font-weight: bold;
+}
+.earnings{
+  width: 100%;
+  height: 46px;
+  display:flex;
+  justify-content: start;
+  align-items: center;
+  p{
+  font-weight: bold;
+  font-size: $paragraph-font-size;
+  padding:20px;
+  margin-left:15px;
   }
-  .table-row{
-    margin: 0 auto;
-    display:flex;
-    justify-content: center;
-    .cell{
-    display:inline-flex;
-    justify-content: space-between;
-    width: 250px;
-    border-bottom: 2px solid #e3e3e3;
-    margin: 15px;
-    .name{
-        font-weight: bold;
+}
+.earnings-indicators{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .dot-wrapper{
+    position: relative;
+    margin:10px;
+    .dot {
+      height: 13px;
+      width: 13px;
+      border-radius: 50%;
+      position:absolute;
+      margin-left: 15px;
+      margin-top:15px;
+      z-index:20;
     }
+    .dot-blue{
+      background-color: $blue;
+    }
+    .dot-orange{
+      background-color: $orange;
+    }
+    .dot-green{
+      background-color: $green;
+    }
+    .button-grey{
+      background-color: $background-main-color;
     }
   }
-  .earnings{
-    width: 100%;
-    height: 46px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    p{
-    font-weight: bold;
-    font-size: $paragraph-font-size;
-    padding:20px;
+}
+.graph{
+position: relative;
+width: 100%;
+width: 600px;
+//height: 100vh;
+margin: 0 auto;
+#myChart{
+  //width: 1000px;
+  //height: 500px;
+  margin-top: 20px;
+}
+}  
+/*Section links*/
+.links{
+  margin-top:20px;
+}
+.main-content_links{
+  width: 100%;
+  //height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $grey-font;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color:$background-navbar;
+  margin-bottom:20px;
+}  
+.button-add{
+  background-color:$orange;
+  color:$background-navbar;
+  margin:20px;
+  width:130px;
+  font-weight: bold;
+  &:hover {
+    background-color: #ffa200;
+  }
+}
+table {
+  border-collapse: collapse;
+  width:60%;
+  border-top: 2px solid $grey-font;
+}
+tr{
+  border-bottom: 2px solid $grey-font;
+  width: 100%;
+  height: 50px;
+  &:hover{
+    background-color:$grey-font;
+  }
+}
+tr:hover td .icon{
+  opacity:1;
+  &:first-child{
+    filter: $filter-orange;
+  }
+  &:last-child{
+    filter: $filter-navbar;
+  }  
+}
+td{
+  padding:20px;
+  a{
+    color:$blue;
+    &:hover {
+      color:$orange;
+    }
+  }    
+}
+td .icon{
+  opacity:0;
+  margin-left:20px;
+}
+
+/* Media */
+@media (max-width: 767px){
+  .sidebar_bottom{
+    display:none;
+    max-width:0;
+  }
+  table{
+    width:30%;
+    tr{
+      flex-direction:column;
     }
   }
-    .earnings-indicators{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .dot-wrapper{
-          position: relative;
-          margin:10px;
-          .dot {
-            height: 15px;
-            width: 15px;
-            background-color:$green;
-            border-radius: 50%;
-            position:absolute;
-            margin-left: 15px;
-            margin-top:15px;
-            z-index:20;
-          }
-        }
-    }
-    .graph{
-      position: relative;
-      width: 100%;
-      width: 600px;
-      //height: 100vh;
-      margin: 0 auto;
-      #myChart{
-        width: 1000px;
-        height: 500px;
-      }
-    }
+}

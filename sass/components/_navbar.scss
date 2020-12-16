@@ -10,7 +10,7 @@
     flex-direction:row;
     justify-content: flex-end;
     color: $grey-hover;
-    z-index:100;
+    z-index:5;
     flex:100%;
     //flex-shrink: 0;
 }
@@ -24,8 +24,17 @@
     border-left: 1px solid $grey-font;
     padding: 20px;
     color: $grey-hover;
+    span{
+        font-size:18px;
+    }
+    &:hover{
+        background-color:$grey-font;
+    }
     .profile-name{
         color:$blue;
+        &:hover{
+            color:$orange;
+        }
     }
 }
 
@@ -39,6 +48,9 @@
     padding: 20px;
     border-left: 1px solid  $grey-font;
     color: $grey-hover;
+    &:hover{
+        background-color:$grey-font;
+    }
     .dot {
         height: 7px;
         width: 7px;

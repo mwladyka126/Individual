@@ -7,23 +7,21 @@
     justify-content: center;
     align-items: center;
     padding-left: 10px;
-    margin-left: 10px;
-    cursor: pointer;
-        
+    margin-left: 10px;        
     &:hover {
       background-color: #ffa200;
     }
 }
 .button-rectangle{
-  width: 80px;
+  width: 90px;
   height: 40px;
-  background-color: $background-main-color;
   border-radius: 5px;
   display:flex;
   justify-content: center;
   align-items: center;
   padding-left: 10px;
   margin-left: 10px;
+  color: $paragraph-color;
   cursor: pointer;
 }
 
