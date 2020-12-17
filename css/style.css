@@ -902,6 +902,18 @@ a .icon-sidebar {
   margin: 0 16px 0 16px;
 }
 
+a .icon-sidebar_nav {
+  filter: invert(94%) sepia(0%) saturate(130%) hue-rotate(190deg) brightness(102%) contrast(85%);
+}
+
+a .amount {
+  color: #e3e3e3;
+}
+
+a .profile-name_sidebar {
+  margin-right: 30px;
+}
+
 .sidebar_manager {
   display: -ms-flexbox;
   display: flex;
@@ -992,6 +1004,8 @@ a .icon-sidebar {
 
 .navbar_element a span {
   font-size: 18px;
+  font-weight: bold;
+  opacity: 0.5;
 }
 
 .navbar_element a:hover {
@@ -1038,11 +1052,6 @@ a .icon-sidebar {
 
 .icon-navbar {
   filter: invert(52%) sepia(12%) saturate(23%) hue-rotate(4deg) brightness(94%) contrast(85%);
-}
-
-.navbar_wallet_amount span {
-  font-weight: bold;
-  opacity: 0.5;
 }
 
 .main-content {
@@ -1264,7 +1273,7 @@ a .icon-sidebar {
 table {
   border-collapse: collapse;
   overflow: hidden;
-  width: auto;
+  width: 80%;
   border-top: 2px solid #e3e3e3;
 }
 
@@ -1312,6 +1321,9 @@ td .icon {
     -ms-flex-direction: column;
         flex-direction: column;
   }
+  .container {
+    padding: 0;
+  }
   .sidebar {
     -ms-flex: 100%;
         flex: 100%;
@@ -1321,18 +1333,24 @@ td .icon {
     height: fit-content;
     position: relative;
   }
-  .sidebar .sidebar_bottom.show {
+  .sidebar .sidebar_bottom {
     display: none;
+  }
+  .sidebar .sidebar_bottom.show {
+    display: block;
   }
   .sidebar .sidebar_nav {
     display: block;
+  }
+  .sidebar .manager-profile {
+    margin-bottom: 20px;
   }
   .navbar {
     display: none;
   }
   /*main-content*/
   .main-content {
-    margin-top: 30px;
+    margin-top: 10px;
   }
   .earnings-indicators .dot-wrapper {
     margin: 0;
@@ -1353,9 +1371,11 @@ td .icon {
   }
   table td {
     padding: 10px;
+    margin: 0 auto;
   }
   table td .icon {
     opacity: 1;
+    margin: 5px;
   }
   table td .icon:first-child {
     filter: invert(70%) sepia(23%) saturate(5197%) hue-rotate(358deg) brightness(100%) contrast(107%);

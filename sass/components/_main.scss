@@ -169,7 +169,7 @@ margin: 0 auto;
 table {
   border-collapse: collapse;
   overflow:hidden;
-  width:auto;
+  width:80%;
   border-top: 2px solid $grey-font;
 }
 tr{
@@ -207,17 +207,26 @@ td .icon{
   .row{
     flex-direction: column;
   }
+  .container{
+    padding:0;
+  }
   .sidebar{
     flex:100%;
     width:100%;
     height: fit-content;
     position:relative;
+    .sidebar_bottom{
+      display:none;
+    }
       .sidebar_bottom.show{
-        display:none;
+        display:block;
     }
     .sidebar_nav{
       display:block;
-  }
+    }
+    .manager-profile{
+      margin-bottom:20px;
+    }
   }
 
   .navbar{
@@ -225,7 +234,7 @@ td .icon{
   }
   /*main-content*/
   .main-content{
-    margin-top:30px;
+    margin-top:10px;
   }
   .earnings-indicators{
     .dot-wrapper{
@@ -243,8 +252,10 @@ td .icon{
     }
     td{
       padding:10px;
+      margin: 0 auto;
       .icon{
         opacity:1;
+        margin:5px;
           &:first-child{
           filter: $filter-orange;
         }

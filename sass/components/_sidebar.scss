@@ -70,6 +70,15 @@ a{
        filter:$filter-sidebar;
        margin: 0 16px 0 16px;       
     }
+    .icon-sidebar_nav{
+        filter:$filter-sidebar;
+    }
+    .amount{
+        color:$grey-font;
+    }
+    .profile-name_sidebar{
+        margin-right:30px;
+    }
 }
 
 .sidebar_manager{
