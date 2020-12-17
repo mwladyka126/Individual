@@ -49,7 +49,7 @@
 }
 .main-content_statistics{
     width: 100%;
-    height: 100vh;
+    //height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -67,6 +67,7 @@
 .table-row{
   margin: 0 auto;
   display:flex;
+  flex-wrap: wrap;
   justify-content: center;
   .cell{
   display:inline-flex;
@@ -93,6 +94,7 @@
   }
 }
 .earnings-indicators{
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -106,7 +108,7 @@
       position:absolute;
       margin-left: 15px;
       margin-top:15px;
-      z-index:20;
+      z-index:2;
     }
     .dot-blue{
       background-color: $blue;
@@ -122,18 +124,22 @@
     }
   }
 }
+.scroll-wrapper {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
 .graph{
 position: relative;
 width: 100%;
-width: 600px;
+max-width: 100%;
+//width: 600px;
 //height: 100vh;
 margin: 0 auto;
-#myChart{
-  //width: 1000px;
-  //height: 500px;
-  margin-top: 20px;
+  #myChart{
+    margin-top: 20px;
+  }
 }
-}  
 /*Section links*/
 .links{
   margin-top:20px;
@@ -162,12 +168,12 @@ margin: 0 auto;
 }
 table {
   border-collapse: collapse;
-  width:60%;
+  overflow:hidden;
+  width:auto;
   border-top: 2px solid $grey-font;
 }
 tr{
   border-bottom: 2px solid $grey-font;
-  width: 100%;
   height: 50px;
   &:hover{
     background-color:$grey-font;
@@ -198,14 +204,54 @@ td .icon{
 
 /* Media */
 @media (max-width: 767px){
-  .sidebar_bottom{
-    display:none;
-    max-width:0;
+  .row{
+    flex-direction: column;
   }
-  table{
-    width:30%;
-    tr{
-      flex-direction:column;
+  .sidebar{
+    flex:100%;
+    width:100%;
+    height: fit-content;
+    position:relative;
+      .sidebar_bottom.show{
+        display:none;
+    }
+    .sidebar_nav{
+      display:block;
+  }
+  }
+
+  .navbar{
+    display:none;
+  }
+  /*main-content*/
+  .main-content{
+    margin-top:30px;
+  }
+  .earnings-indicators{
+    .dot-wrapper{
+      margin:0;
     }
   }
+  /*links*/
+  table{
+    tr{
+      display: flex;
+      flex-direction:column;
+      justify-content: center;
+      align-self: center;
+      height:min-content;
+    }
+    td{
+      padding:10px;
+      .icon{
+        opacity:1;
+          &:first-child{
+          filter: $filter-orange;
+        }
+        &:last-child{
+          filter: $filter-navbar;
+        }  
+      }
+    }
+  }    
 }

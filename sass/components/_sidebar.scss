@@ -2,7 +2,7 @@
     background-color:$background-sidebar;
     color:$grey-font;
     width:max-content;
-    height: 100vh;
+    height: 100%;
     margin:0;
     position: fixed;
     z-index:10;
@@ -32,20 +32,18 @@
 
     }
     .hamburger{
-        margin-top: 10px;  
+        margin-top: 10px; 
+        margin-right: 30px; 
         &:hover{
         color:$orange;
         }
     }
 }
 
-.sidebar_list{
+.sidebar_nav{
+    display:none;
 }
-.sidebar_bottom.show{
-    position: absolute !important;
-   top: -9999px !important;
-   left: -9999px !important;
-}
+
 ul{
     list-style-type:none;
     border-bottom: 2px solid $grey-font;

@@ -16,7 +16,7 @@
     <div class="wrapper">
         <div class="row">
 
-            <div class="col-md-2 col-lg-2" id="left">
+            <div class="col-sm-12 col-md-3 col-lg-2" id="left">
                 <div class="sidebar">
                     <div class="sidebar_top">
                         <div class="sidebar_title">
@@ -38,7 +38,7 @@
                                             alt="details-icon">Details</a>
                                 </li>
                                 <li>
-                                    <a href="#"><img class="icon icon-sidebar" src="images/icons/links.svg"
+                                    <a href="#links"><img class="icon icon-sidebar" src="images/icons/links.svg"
                                             alt="links-icon">Links</a>
                                 </li>
                                 <li>
@@ -59,6 +59,35 @@
                                 </li>
                             </ul>
                         </div>
+                        <div class="sidebar_nav">
+                            <div class="navbar_element">
+                                <a href="#">
+                                    <img class="icon icon-navbar wallet " src="images/icons/wallet.svg"
+                                        alt="wallet-icon">
+                                    <div class="navbar_wallet_amount"><span>$1,500.00</span></div>
+                                    <img class="icon icon-navbar " src="images/icons/arrow-down.svg"
+                                        alt="arrow-down-icon">
+                                </a>
+                            </div>
+                            <div class="navbar_button">
+                                <a href="#">
+                                    <span class="dot"></span>
+                                    <img class="icon icon-navbar  notification" src="images/icons/notification.svg"
+                                        alt="notification-icon">
+                                </a>
+                            </div>
+                            <div class="navbar_element">
+                                <a href="#">
+                                    <img class="icon icon-navbar" src="images/icons/profile.svg" alt="profile-icon">
+                                    <div class="profile-name">Leon Caprio</div>
+                                </a>
+                            </div>
+                            <div class="navbar_button">
+                                <a href="#">
+                                    <img class="icon icon-navbar quit" src="images/icons/quit.svg" alt="links-icon">
+                                </a>
+                            </div>
+                        </div>
                         <div class="sidebar_manager">
                             <div class="manager-title">
                                 <h4>YOUR MANAGER</h4>
@@ -75,7 +104,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-10 col-md-10 col-lg-10" id="right">
+            <div class="col-sm-12 col-md-9 col-lg-10" id="right">
                 <div class="row">
                     <div class="navbar">
                         <div class="navbar_element">
@@ -119,7 +148,7 @@
                         </div>
                         <div class="main-content_statistics">
                             <div class="table">
-                                <div class="table-row row">
+                                <div class="table-row">
                                     <div class="cell">
                                         <div class="name">Visit Signupus</div>
                                         <div>124</div>
@@ -129,7 +158,7 @@
                                         <div>564</div>
                                     </div>
                                 </div>
-                                <div class="table-row row">
+                                <div class="table-row">
                                     <div class="cell">
                                         <div class="name">FTD</div>
                                         <div>445</div>
@@ -142,7 +171,7 @@
                             </div>
 
 
-                            <div class="main-content-statistics-earnings">
+                            <div class="main-content-statistics-earnings container">
                                 <div class="earnings">
                                     <p>Earnings chart</p>
                                 </div>
@@ -160,7 +189,7 @@
                                         <a href="#" class="button-rectangle">Earned</a>
                                     </div>
                                 </div>
-                                <div class="graph scroll-wrapper">
+                                <div class="graph container-fluid">
                                     <canvas id="myChart"></canvas>
                                 </div>
                             </div>
@@ -168,7 +197,7 @@
                     </section>
                     <section class="container-fluid links">
                         <div class="main-content_title">
-                            <h2>LINKS</h2>
+                            <h2>LINKS<a name="links"></a></h2>
                         </div>
                         <div class="main-content_links">
                             <div class="button-wrapper">
