@@ -341,6 +341,81 @@ template {
   display: none;
 }
 
+@media (max-width: 767px) {
+  /*layout*/
+  .row {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .container {
+    padding: 0;
+  }
+  /*sidebar*/
+  .sidebar {
+    -ms-flex: 100%;
+        flex: 100%;
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    position: relative;
+  }
+  .sidebar .sidebar_bottom {
+    display: none;
+  }
+  .sidebar .sidebar_bottom.show {
+    display: block;
+  }
+  .sidebar .sidebar_nav {
+    display: block;
+  }
+  .sidebar .manager-profile {
+    margin-bottom: 20px;
+  }
+  /*navbar*/
+  .navbar {
+    display: none;
+  }
+  .navbar_element a:hover, .navbar_button a:hover {
+    background-color: #302e2e;
+  }
+  /*main-content*/
+  .main-content {
+    margin-top: 10px;
+  }
+  .earnings-indicators .dot-wrapper {
+    margin: 0;
+  }
+  /*links*/
+  table tr {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+  }
+  table td {
+    padding: 10px;
+    margin: 0 auto;
+  }
+  table td .icon {
+    opacity: 1;
+    margin: 5px;
+  }
+  table td .icon:first-child {
+    filter: invert(70%) sepia(23%) saturate(5197%) hue-rotate(358deg) brightness(100%) contrast(107%);
+  }
+  table td .icon:last-child {
+    filter: invert(52%) sepia(12%) saturate(23%) hue-rotate(4deg) brightness(94%) contrast(85%);
+  }
+}
+
 body {
   width: 100vw;
   background-color: #f5f5f2;
@@ -914,6 +989,10 @@ a .profile-name_sidebar {
   margin-right: 30px;
 }
 
+.sidebar_nav {
+  height: 42px;
+}
+
 .sidebar_manager {
   display: -ms-flexbox;
   display: flex;
@@ -1317,6 +1396,7 @@ td .icon {
 
 /* Media */
 @media (max-width: 767px) {
+  /*layout*/
   .row {
     -ms-flex-direction: column;
         flex-direction: column;
@@ -1324,6 +1404,7 @@ td .icon {
   .container {
     padding: 0;
   }
+  /*sidebar*/
   .sidebar {
     -ms-flex: 100%;
         flex: 100%;
@@ -1339,14 +1420,18 @@ td .icon {
   .sidebar .sidebar_bottom.show {
     display: block;
   }
-  .sidebar .sidebar_nav {
+  .sidebar .sidebar_navbar {
     display: block;
   }
   .sidebar .manager-profile {
     margin-bottom: 20px;
   }
+  /*navbar*/
   .navbar {
     display: none;
+  }
+  .navbar_element a:hover, .navbar_button a:hover {
+    background-color: #302e2e;
   }
   /*main-content*/
   .main-content {
