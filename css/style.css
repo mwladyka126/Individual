@@ -2,6 +2,81 @@
 /* Font sizes */
 /* Fonts */
 /*transition*/
+@media (max-width: 767px) {
+  /*layout*/
+  .row {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .container {
+    padding: 0;
+  }
+  /*sidebar*/
+  .sidebar {
+    -ms-flex: 100%;
+        flex: 100%;
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    position: relative;
+  }
+  .sidebar .sidebar_bottom {
+    display: none;
+  }
+  .sidebar .sidebar_bottom.show {
+    display: block;
+  }
+  .sidebar .sidebar_nav {
+    display: block;
+  }
+  .sidebar .manager-profile {
+    margin-bottom: 20px;
+  }
+  /*navbar*/
+  .navbar {
+    display: none;
+  }
+  .navbar_element a:hover, .navbar_button a:hover {
+    background-color: #302e2e;
+  }
+  /*main-content*/
+  .main-content {
+    margin-top: 10px;
+  }
+  .earnings-indicators .dot-wrapper {
+    margin: 0;
+  }
+  /*links*/
+  table tr {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+  }
+  table td {
+    padding: 10px;
+    margin: 0 auto;
+  }
+  table td .icon {
+    opacity: 1;
+    margin: 5px;
+  }
+  table td .icon:first-child {
+    filter: invert(70%) sepia(23%) saturate(5197%) hue-rotate(358deg) brightness(100%) contrast(107%);
+  }
+  table td .icon:last-child {
+    filter: invert(52%) sepia(12%) saturate(23%) hue-rotate(4deg) brightness(94%) contrast(85%);
+  }
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -339,81 +414,6 @@ template {
    */
 [hidden] {
   display: none;
-}
-
-@media (max-width: 767px) {
-  /*layout*/
-  .row {
-    -ms-flex-direction: column;
-        flex-direction: column;
-  }
-  .container {
-    padding: 0;
-  }
-  /*sidebar*/
-  .sidebar {
-    -ms-flex: 100%;
-        flex: 100%;
-    width: 100%;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    position: relative;
-  }
-  .sidebar .sidebar_bottom {
-    display: none;
-  }
-  .sidebar .sidebar_bottom.show {
-    display: block;
-  }
-  .sidebar .sidebar_nav {
-    display: block;
-  }
-  .sidebar .manager-profile {
-    margin-bottom: 20px;
-  }
-  /*navbar*/
-  .navbar {
-    display: none;
-  }
-  .navbar_element a:hover, .navbar_button a:hover {
-    background-color: #302e2e;
-  }
-  /*main-content*/
-  .main-content {
-    margin-top: 10px;
-  }
-  .earnings-indicators .dot-wrapper {
-    margin: 0;
-  }
-  /*links*/
-  table tr {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-item-align: center;
-        align-self: center;
-    height: -webkit-min-content;
-    height: -moz-min-content;
-    height: min-content;
-  }
-  table td {
-    padding: 10px;
-    margin: 0 auto;
-  }
-  table td .icon {
-    opacity: 1;
-    margin: 5px;
-  }
-  table td .icon:first-child {
-    filter: invert(70%) sepia(23%) saturate(5197%) hue-rotate(358deg) brightness(100%) contrast(107%);
-  }
-  table td .icon:last-child {
-    filter: invert(52%) sepia(12%) saturate(23%) hue-rotate(4deg) brightness(94%) contrast(85%);
-  }
 }
 
 body {
@@ -1394,7 +1394,6 @@ td .icon {
   margin-left: 20px;
 }
 
-/* Media */
 @media (max-width: 767px) {
   /*layout*/
   .row {
@@ -1420,7 +1419,7 @@ td .icon {
   .sidebar .sidebar_bottom.show {
     display: block;
   }
-  .sidebar .sidebar_navbar {
+  .sidebar .sidebar_nav {
     display: block;
   }
   .sidebar .manager-profile {

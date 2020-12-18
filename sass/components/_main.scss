@@ -199,3 +199,73 @@ td .icon{
   margin-left:20px;
 }
 
+@media (max-width: 767px){
+    /*layout*/
+    .row{
+      flex-direction: column;
+    }
+    .container{
+      padding:0;
+    }
+    /*sidebar*/
+    .sidebar{
+      flex:100%;
+      width:100%;
+      height: fit-content;
+      position:relative;
+      .sidebar_bottom{
+        display:none;
+      }
+        .sidebar_bottom.show{
+          display:block;
+      }
+      .sidebar_nav{
+        display:block;
+      }
+      .manager-profile{
+        margin-bottom:20px;
+      }
+    }
+  /*navbar*/
+    .navbar{
+      display:none;
+    }
+    .navbar_element, .navbar_button{
+      a:hover{
+        background-color:$background-sidebar;     
+      }
+    }
+    /*main-content*/
+    .main-content{
+        margin-top:10px;
+    }
+    .earnings-indicators{
+        .dot-wrapper{
+        margin:0;
+        }
+    }
+    /*links*/
+    table{
+        tr{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-self: center;
+        height:min-content;
+        }
+        td{
+        padding:10px;
+        margin: 0 auto;
+        .icon{
+            opacity:1;
+            margin:5px;
+            &:first-child{
+            filter: $filter-orange;
+            }
+            &:last-child{
+            filter: $filter-navbar;
+            }  
+        }
+        }
+    }    
+}

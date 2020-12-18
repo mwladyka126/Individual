@@ -1,1 +1,1 @@
-# Individual
+ https://mwladyka126.github.io/Individual/
