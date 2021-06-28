@@ -4,5 +4,5 @@
 
 ### visit to see
 
-https://mwladyka126.github.io/administartion-panel
+https://mwladyka126.github.io/administration-panel
 
