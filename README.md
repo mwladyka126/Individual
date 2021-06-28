@@ -4,4 +4,5 @@
 
 ### visit to see
 
-https://mwladyka126.github.io/Individual/
+https://mwladyka126.github.io/administartion-panel
+
