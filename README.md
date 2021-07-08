@@ -1,4 +1,4 @@
-## Administartion panel for management of banners and links
+## Administration panel for management of banners and links
 
 `npm run watch` to run the project
 
